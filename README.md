@@ -41,7 +41,14 @@ python main.py
 ```
 
 ## 📸 스크린샷 
-*(여기에 실제 실행 화면이나 아이콘 이미지를 업로드 후 링크하세요)*
+
+| 메인 대시보드 | 한글 문서 병합 |
+| :---: | :---: |
+| ![Main](image/main.jpg) | ![HWPX](image/hwpx.jpg) |
+
+| 엑셀 데이터 통합 | PDF 문서 합치기 |
+| :---: | :---: |
+| ![XLSX](image/xlsx.jpg) | ![PDF](image/pdf.jpg) |
 
 ## 📝 라이선스
 본 프로젝트는 MIT 라이선스를 따릅니다.
