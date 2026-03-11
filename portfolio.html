@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Merger v2.0 Portfolio | easyeek</title>
+    <style>
+        :root {
+            --bg-deep: #0f172a;
+            --bg-card: #1e293b;
+            --premium-gold: #D4AF37;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --border-color: rgba(212, 175, 55, 0.2);
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 16px;
+            border: 1px dashed var(--premium-gold);
+        }
+
+        h1 {
+            color: var(--premium-gold);
+            font-size: 2.2em;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .slogan {
+            font-size: 1.1em;
+            color: var(--text-sub);
+            margin-top: 10px;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            border-left: 4px solid var(--premium-gold);
+            padding-left: 15px;
+            margin: 50px 0 25px;
+            font-weight: 700;
+        }
+
+        .card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 2px solid var(--premium-gold);
+        }
+
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 45px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        th {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--premium-gold);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-sub);
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: var(--premium-gold);
+            text-decoration: none;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--premium-gold);
+            color: var(--bg-deep);
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Portfolio</div>
+            <h1>Premium Merger v2.0</h1>
+            <p class="slogan">HWPX, XLSX, PDF 통합 데이터 병합 자동화 솔루션</p>
+        </header>
+
+        <h2 class="section-title">1. 프로젝트 개요</h2>
+        <div class="card">
+            <p>서로 다른 성격의 문서 데이터(한글, 엑셀, PDF)를 하나의 마스터 파일로 자동 통합하는 비즈니스 자동화 툴입니다. 기존의 수동 병합 작업을 자동화하여 업무 효율을 95% 이상
+                개선하였습니다.</p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🛡️</span>
+                    <strong>Stability</strong><br>
+                    멀티스레딩 기반 UI 프리징 방지
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">💎</span>
+                    <strong>Design</strong><br>
+                    Premium 다크 모드 GUI 시스템
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <strong>Fast</strong><br>
+                    대용량 데이터 고속 통합 연산
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. 기술 스택</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>기술 분류</th>
+                    <th>상세 도구</th>
+                    <th>핵심 기능</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Core Language</strong></td>
+                    <td>Python 3.12</td>
+                    <td>전체 로직 제어 및 패키징</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Engine</strong></td>
+                    <td>Pandas, Openpyxl, pypdf</td>
+                    <td>다양한 포맷의 데이터 파싱 및 결합</td>
+                </tr>
+                <tr>
+                    <td><strong>Automation</strong></td>
+                    <td>pywin32 (OLE Automation)</td>
+                    <td>한컴오피스 한글 엔진 직접 제어</td>
+                </tr>
+                <tr>
+                    <td><strong>UI/UX</strong></td>
+                    <td>Tkinter, Custom Style</td>
+                    <td>프리미엄 다크 모드 GUI 구현</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">3. 주요 기능 명세</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="feature-icon">📄</span>
+                <strong>한글(HWPX) 통합</strong>
+                <p style="font-size: 0.9em; color: var(--text-sub);">한글 엔진 연동을 통한 문서 수직 결합 및 서식 유지 통합</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">📊</span>
+                <strong>엑셀(XLSX) 통합</strong>
+                <p style="font-size: 0.9em; color: var(--text-sub);">멀티 시트/멀티 파일 자동 스캔 및 인코딩 폴백 시스템</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">📕</span>
+                <strong>PDF 통합</strong>
+                <p style="font-size: 0.9em; color: var(--text-sub);">고속 PDF 병합 라이브러리를 통한 안정적인 결과물 생성</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">4. 비즈니스 가치</h2>
+        <div class="card" style="background: rgba(212, 175, 55, 0.03);">
+            <ul>
+                <li style="margin-bottom: 10px;">수작업 대비 데이터 처리 시간 <strong>95% 단축</strong></li>
+                <li style="margin-bottom: 10px;">휴먼 에러 방지 및 데이터 일관성 확보</li>
+                <li style="margin-bottom: 10px;">단일 EXE 배포 체계로 실무 현장 즉시 투입 가능</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Created by <strong>easyeek</strong> | <a href="mailto:easyeek.mill@gmail.com">Contact Me</a></p>
+            <p>© 2026 Premium Merger Hub. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
