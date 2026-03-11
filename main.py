@@ -18,6 +18,15 @@ class MainDashboard:
         self.btn_font = ("Pretendard", 14, "bold")
 
         self.setup_ui()
+        self.apply_icon()
+
+    def apply_icon(self):
+        icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app_icon.ico")
+        try:
+            if os.path.exists(icon_path):
+                self.root.iconbitmap(icon_path)
+        except Exception as e:
+            print(f"Icon error: {e}")
 
     def setup_ui(self):
         screen_width = self.root.winfo_screenwidth()
@@ -61,15 +70,26 @@ class MainDashboard:
 
     def open_hwpx_merger(self):
         new_win = tk.Toplevel(self.root)
+        self.set_win_icon(new_win)
         HwpMergerGUI(new_win)
 
     def open_xlsx_merger(self):
         new_win = tk.Toplevel(self.root)
+        self.set_win_icon(new_win)
         ExcelMergerPremium(new_win)
 
     def open_pdf_merger(self):
         new_win = tk.Toplevel(self.root)
+        self.set_win_icon(new_win)
         PdfMergerGUI(new_win)
+
+    def set_win_icon(self, win):
+        icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app_icon.ico")
+        try:
+            if os.path.exists(icon_path):
+                win.iconbitmap(icon_path)
+        except:
+            pass
 
 if __name__ == "__main__":
     root = tk.Tk()
