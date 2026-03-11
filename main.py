@@ -54,8 +54,8 @@ class MainDashboard:
         create_card(card_frame, "엑셀 데이터 통합", "📊", "여러 개의 XLSX / CSV 시트를\n하나의 파일로 결합합니다", self.open_xlsx_merger)
         create_card(card_frame, "PDF 문서 합치기", "📕", "기본 PDF 파일들을\n순서대로 병합합니다", self.open_pdf_merger)
 
-        # 제작자 표기 수정 (USER 중심)
-        footer = tk.Label(self.root, text="v2.0 Premium Edition | Created by USER & Antigravity Collaborative", 
+        # 제작자 표기 최종 수정 (easyeek)
+        footer = tk.Label(self.root, text="v2.0 Premium Edition | Created by easyeek", 
                           bg="#0f172a", fg="#334155", font=("Pretendard", 8))
         footer.pack(side=tk.BOTTOM, pady=30)
 
